@@ -68,7 +68,7 @@ nav {
 }
 .background {
   height: 60rem;
-  width: 40rem;
+  max-width: 100%;
   object-fit: cover;
   /* object-position: bottom; */
   position: absolute;
@@ -160,7 +160,7 @@ main {
 .section-image img {
   position: absolute;
   height: 30rem;
-  width: 30rem;
+  max-width: 100%;
   top: -180px;
 }
 .section-intro {
@@ -202,6 +202,9 @@ main {
 .photo.laptop-image {
   margin-top: 3rem;
 }
+.photo.laptop-image img {
+  width: 100%;
+}
 footer {
   min-height: 50vh;
   background: hsl(240, 10%, 16%);
@@ -218,10 +221,8 @@ footer {
 }
 .product {
   margin-bottom: 2rem;
-  height: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .product h4 {
   margin-bottom: 1.5rem;
