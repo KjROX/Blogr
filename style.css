@@ -21,6 +21,12 @@ nav {
   position: relative;
   z-index: 10;
 }
+.nav-links {
+  display: none;
+}
+.login.buttons {
+  display: none;
+}
 .hero {
   margin: 3rem 2rem;
   height: 80%;
@@ -78,6 +84,7 @@ nav {
 main {
   min-height: 100vh;
   padding: 3rem 0rem;
+  overflow: hidden;
 }
 .heading {
   font-family: "Overpass", sans-serif;
@@ -99,6 +106,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.illustration-editor-desktop {
+  display: none;
 }
 .description {
   width: 90%;
@@ -159,7 +169,7 @@ main {
 }
 .section-image img {
   position: absolute;
-  height: 30rem;
+  height: 25rem;
   max-width: 100%;
   top: -180px;
 }
@@ -199,6 +209,9 @@ main {
   height: 20rem;
   width: 20rem;
 }
+.illustration-laptop-desktop {
+  display: none;
+}
 .photo.laptop-image {
   margin-top: 3rem;
 }
@@ -237,4 +250,118 @@ footer {
   margin-bottom: 1rem;
   font-family: "Ubuntu", sans-serif;
   color: hsl(240, 2%, 79%);
+}
+@media (min-width: 809px) {
+  .nav-links {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+  }
+  .wrapper2 {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .link h4 {
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    font-size: 1rem;
+  }
+  .hamburger,
+  .logo1 {
+    display: none;
+  }
+  .login.buttons {
+    display: flex;
+  }
+  .login.buttons button {
+    border: none;
+  }
+  .designed-for-the-future {
+    margin-top: 3rem;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 5%;
+    /* overflow: hidden; */
+  }
+  .photo {
+    width: 60%;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .illustration-editor-desktop {
+    display: block;
+    width: 100%;
+    position: absolute;
+    right: -170px;
+  }
+  .illustration-editor-mobile {
+    display: none;
+  }
+  .description {
+    width: 40%;
+    text-align: left;
+  }
+  .state-of-art-interaction {
+    padding-bottom: 0;
+  }
+  .wrapper1 {
+    display: flex;
+    width: 100%;
+  }
+  .section-image {
+    width: 50%;
+  }
+  .section-image img {
+    height: 45rem;
+    top: -440px;
+  }
+  .section-intro {
+    width: 50%;
+    text-align: left;
+    padding: 2rem;
+  }
+  .phones-image img {
+    left: 120px;
+    top: -100px;
+    height: 30rem;
+    width: 30rem;
+  }
+  .laptop {
+    display: flex;
+    margin-top: 5rem;
+    position: relative;
+    margin-bottom: 15rem;
+  }
+  .illustration-laptop-mobile {
+    display: none;
+  }
+  .illustration-laptop-desktop {
+    display: flex;
+  }
+  .description1 {
+    padding: 3rem 2rem 3rem 2rem;
+    margin-right: 5rem;
+  }
+  .photo.laptop-image {
+    margin-top: 0;
+    overflow: visible;
+  }
+  .photo.laptop-image img {
+    width: 100%;
+    position: absolute;
+    left: -195px;
+    top: 0;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 5rem;
+  }
 }
